@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Giovanna Domingos</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://kit.fontawesome.com/1e0c883fb6.css" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/1e0c883fb6.js" crossorigin="anonymous"></script>
+    <script src="audio.js"></script>
 </head>
 <body>
     <!--CABEÇALHO-->
@@ -27,14 +28,59 @@
         </ul>
     </div>
 
+    <!--SIDEBAR-->
+  <div class="sidebar">
+    <aside class="left">
+      <p>Minhas redes sociais!</p>
 
+      <a href="https://twitter.com/oi_patiu/"><i class="fa-brands fa-twitter"></i></a>
+      <br>
+      <a href="https://www.youtube.com/channel/UCPjZmCQ86ZQgf_KQ5YPvbWA"><i class="fa-brands fa-youtube"></i></a>
+    
+      <iframe src="updates.html" frameborder="0"></iframe>  
+    </aside>
+  </div>
 
     <!--UMIDAJI-->
-    <div class="umidaji">
+
+
+<div class="voicebank">
+    <div class="vb-img">
         <div class="checkered">
             <img src="png/portrait.png" alt="" width="900px">
         </div>
     </div>
+    <div class="voicebank-info">
+<h1><img src="gif/brilho azul.gif" alt="">UMIDAJI<img src="gif/brilho azul.gif" alt=""></h1>
+
+        <div class="vb-box">
+            <p>Umidaji é um banco suave de inteligencial
+                articifial usada para o OPEN UTAU
+           </p>
+               <ul>
+                   <li>40 min de sample</li>
+                   <li>Músicas de domínio público</li>
+                   <li>Microfone Arcano AM Black</li>
+               </ul>
+            
+
+        <div class="audio-box">
+            <button onclick="playAudio()"><img src="png/play.png"></button>
+            <button onclick="pauseAudio()"><img src="png/pause.png" alt=""></button>
+            <button onclick="stopAudio()"><img src="png/stop.png" alt=""></button>
+            <div id='div1' onmousemove = "getMousePos(event)" onmousedown="setVolume(event)"> <p>Scroll your mouse here.</p></div>
+            <p id="status">Not playing.</p>
+            <canvas id='volumeCanvas' height="25" width="100"></canvas>
+        </div>
+
+
+        </div>
+        <div class="download">
+            <a href="#">DOWNLOAD</a>
+        </div>
+</div>
+</div>
 
 </body>
 </html>
+
