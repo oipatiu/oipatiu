@@ -26,11 +26,15 @@ html, body {
     transition: 0.1s;
 }
 
+/* ---PORTIFOLIO--- */
+.inicial-portifolio {
+    background-color: var(--rosinha);
+    text-align: center;
+}
 
 /* ---BLOG--- */
 
 canvas {
-    background: -webkit-canvas(circulos);
     z-index: auto;
     overflow: hidden;
 }
@@ -39,7 +43,7 @@ canvas {
     background-size: 100%;
     background-position-x: 0px;
     background-attachment: fixed;
-    background-color: rgb(37, 36, 37);
+    background-color: rgb(255, 255, 255);
 }
 
 /* ---NAV--- */
@@ -275,6 +279,9 @@ iframe {
 /* ---MEDIA ONLY--- */
 
 @media only screen and (max-width: 980px) {
+    .nav {
+        position: relative;
+    }
     .nav li {
         float: right;
     }
@@ -296,8 +303,13 @@ iframe {
     
     .home {
         display: block;
-        margin: 10px;
+        margin: 0px;
         width: 90%;
+        position: absolute;
+    }
+
+    canvas {
+        overflow: hidden;
     }
 
 }

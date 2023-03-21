@@ -16,8 +16,8 @@ function sortColors(){
     var b = Math.floor(Math.random() * 2); //rgb random
     var cores = [r, g, b] // array
 
-    for(i = 0; i < cores.length; i++){
-        if(cores[i] == 0){
+    for(i = 0; i < 2; i++) {
+        if(cores[i] == 0) {
             zeroCounter++
         } else if(cores[i] == 1){
             cores[i] = 255
@@ -42,7 +42,7 @@ function sortColors(){
 
 
 // Variáveis para a circunferência (não é círculo é circunferenciaaaawka iwhgaoishnaoiwgyhnaoi0phn)
-const numCircles = Math.floor(Math.random() * 888)
+const numCircles = Math.floor(Math.random() * 188)
 
 //vários circulos
 for(w = 1; w < numCircles; w++){
@@ -50,10 +50,10 @@ for(w = 1; w < numCircles; w++){
     var posX = Math.floor(Math.random() * canvas.clientWidth)
     var posY = Math.floor(Math.random() * canvas.clientHeight)
     //desenho da circunferênciaaa
-    ctx.fillStyle = `rgb(${sortColors()})`
-    ctx.strokeStyle = `rgb(${sortColors()})`
+    ctx.fillStyle = `rgba(${sortColors()}, 0.2)`
+    ctx.strokeStyle = `rgba(${sortColors()}, 0.2)`
     ctx.beginPath();
-    ctx.lineWidth = 15;
+    ctx.lineWidth = 1;
     ctx.arc(posX, posY, 80, 0, 2 * Math.PI);
     // ctx.arc(posX / 2, posY / 2, 30, 0, 2 * Math.PI);
     ctx.stroke();
