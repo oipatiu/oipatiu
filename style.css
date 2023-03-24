@@ -276,6 +276,36 @@ iframe {
 }
 
 
+/* ----MEDIAPLAYER------*/
+
+#play, #pause {
+    font-size: 30px; 
+    margin: 10px;
+    color: var(--cinzinha);
+}
+
+#play:hover, #pause:hover {
+    cursor: pointer;
+}
+
+#barra {
+    padding: 10px;
+}
+
+progress {
+    color: var(--cinzinha);
+    border-width: 8px;
+    border-style:solid;
+   
+}
+
+.miniplayer {
+    width: 200px;
+    border-radius: 10%;
+    padding: 3%;
+    backdrop-filter: blur(1);
+}
+
 /* ---MEDIA ONLY--- */
 
 @media only screen and (max-width: 980px) {

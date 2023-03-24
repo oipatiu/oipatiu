@@ -6,7 +6,6 @@
     <title>Giovanna Domingos</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/1e0c883fb6.js" crossorigin="anonymous"></script>
-    <script src="audio.js"></script>
 </head>
 <body>
     <!--CABEÇALHO-->
@@ -62,25 +61,24 @@
                    <li>Músicas de domínio público</li>
                    <li>Microfone Arcano AM Black</li>
                </ul>
-            
-
-        <div class="audio-box">
-            <button onclick="playAudio()"><img src="png/play.png"></button>
-            <button onclick="pauseAudio()"><img src="png/pause.png" alt=""></button>
-            <button onclick="stopAudio()"><img src="png/stop.png" alt=""></button>
-            <div id='div1' onmousemove = "getMousePos(event)" onmousedown="setVolume(event)"> <p>Scroll your mouse here.</p></div>
-            <p id="status">Not playing.</p>
-            <canvas id='volumeCanvas' height="25" width="100"></canvas>
-        </div>
-
-
+            <div class="miniplayer">
+                <i class="fa-solid fa-play" id="play"></i>
+                <i class="fa-solid fa-pause" id="pause"></i>
+                <div id="barra">
+                        <progress value="0" max="1"></progress>
+                    <div class="tempo">
+                        <p id="initialDuration">0:00</p>
+                    </div>
+                </div>
+                
+            </div>
         </div>
         <div class="download">
             <a href="#">DOWNLOAD</a>
         </div>
+    </div>
 </div>
-</div>
-
+<script src="mediaplayer.js"></script>
 </body>
 </html>
 
